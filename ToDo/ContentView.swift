@@ -8,16 +8,60 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var newListItem: String = ""
+    
+    @State private var listItems: [String] = []
+    
     var body: some View {
+        
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            
+            HStack {
+                TextField("Skriv din listpunkt här", text: $newListItem)
+                
+                Button(action: {
+                    if(newListItem != "") {
+                        listItems.append(newListItem)
+                        newListItem = ""
+                    }
+                }) {
+                    Text("Lägg till")
+                }
+                
+                
+            }.padding(.all)
+            
+            List(listItems, id: \.self) { listItem in
+                HStack {
+                    ListRowView(listItems: listItem)
+                }
+            }
+            .overlay(Group {
+                if listItems.isEmpty {
+                    Text("Listan är tom")
+                        .foregroundColor(.gray)
+                }
+            })
+            
+            
+            Spacer()
+            
+            if !listItems.isEmpty {
+                Button(action: {
+                    listItems.removeAll()
+                }) {
+                    Text("Töm lista")
+                        .foregroundColor(.red)
+                        .padding(.all)
+                }
+            }
+            
         }
-        .padding()
-    }
-}
+        
+    } // END BODY
+    
+} // END ContentView
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

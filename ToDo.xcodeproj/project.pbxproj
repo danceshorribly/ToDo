@@ -14,6 +14,7 @@
 		B48CD8192B0762780064CF69 /* ToDoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48CD8182B0762780064CF69 /* ToDoTests.swift */; };
 		B48CD8232B0762780064CF69 /* ToDoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48CD8222B0762780064CF69 /* ToDoUITests.swift */; };
 		B48CD8252B0762780064CF69 /* ToDoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48CD8242B0762780064CF69 /* ToDoUITestsLaunchTests.swift */; };
+		B48CD8322B076A370064CF69 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48CD8312B076A370064CF69 /* ListRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		B48CD81E2B0762780064CF69 /* ToDoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48CD8222B0762780064CF69 /* ToDoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoUITests.swift; sourceTree = "<group>"; };
 		B48CD8242B0762780064CF69 /* ToDoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B48CD8312B076A370064CF69 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				B48CD8072B0762760064CF69 /* ToDoApp.swift */,
 				B48CD8092B0762760064CF69 /* ContentView.swift */,
+				B48CD8312B076A370064CF69 /* ListRowView.swift */,
 				B48CD80B2B0762770064CF69 /* Assets.xcassets */,
 				B48CD80D2B0762770064CF69 /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				B48CD80A2B0762760064CF69 /* ContentView.swift in Sources */,
 				B48CD8082B0762760064CF69 /* ToDoApp.swift in Sources */,
+				B48CD8322B076A370064CF69 /* ListRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
